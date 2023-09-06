@@ -37,7 +37,7 @@ const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     }
     else{
         try {
-            const url = 'http://localhost:5000/api/user/signup'; // Replace with your API endpoint URL
+            const url = '/api/user/signup'; // Replace with your API endpoint URL
             const headers = {
               'Content-Type': 'application/json', // Adjust the content type as per your API requirements
             };
