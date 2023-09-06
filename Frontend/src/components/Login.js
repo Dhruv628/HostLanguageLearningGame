@@ -23,7 +23,7 @@ else if(!email || !password){
 }
 else{
     try {
-        const url = 'http://localhost:5000/api/user/login';
+        const url = '/api/user/login';
         const headers = {
           'Content-Type': 'application/json',
         };

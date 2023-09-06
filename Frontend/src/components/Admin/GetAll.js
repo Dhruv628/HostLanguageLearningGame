@@ -37,7 +37,7 @@ const GetAll = () => {
     //Fetching ALL
     const fetchAll=async()=>{
      
-        const response=await fetch("http://localhost:5000/api/game/get",{
+        const response=await fetch("/api/game/get",{
             method:"GET",
             headers:{
                 token:getCookie("authtoken")
