@@ -26,7 +26,7 @@ const GamesPlayed = () => {
     //Fetching USER GAMES
     const fetchGames = async () => {
       const response = await fetch(
-        "http://localhost:5000/api/session/user/sessions",
+        "/api/session/user/sessions",
         {
           method: "GET",
           headers: {
