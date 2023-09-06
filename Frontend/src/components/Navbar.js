@@ -48,7 +48,7 @@ function Navbar() {
 
     // Fetch user data if token is present
     if (tokn !== '') {
-      const response = await fetch("http://localhost:5000/api/user/getuser", {
+      const response = await fetch("/api/user/getuser", {
         method: "GET",
         headers: {
           token: tokn

@@ -10,7 +10,7 @@ const Leaderboard = () => {
     // Fetching all GAMES
     const fetchGames = async () => {
       const response = await fetch(
-        "http://localhost:5000/api/session/all/sessions",
+        "/api/session/all/sessions",
         {
           method: "GET",
         }
