@@ -52,7 +52,7 @@ const GetAll = () => {
     const ConfirmDelete=async()=>{
         const updatedQuestions = Questions.filter((question) => question._id !== id);
         setQuestions(updatedQuestions);
-        await fetch(`http://localhost:5000/api/game/delete/${id}`,{
+        await fetch(`/api/game/delete/${id}`,{
             method:"DELETE",
             headers:{
                 token:token
@@ -91,7 +91,7 @@ const GetAll = () => {
       });
       setQuestions(updatedQuestions);
 
-     await fetch(`http://localhost:5000/api/game/update/${id}`,{
+     await fetch(`/api/game/update/${id}`,{
           method:"PUT",
           headers:{
               "Content-type":"application/json",
@@ -117,7 +117,7 @@ const GetAll = () => {
 
     setQuestions((prevQuestions) => [sentData, ...prevQuestions]);
 
-    const response=await fetch("http://localhost:5000/api/game/create",{
+    const response=await fetch("/api/game/create",{
         method:"POST",
         headers:{
             "Content-type":"application/json",
