@@ -37,7 +37,7 @@ const GetAll = () => {
     //Fetching ALL
     const fetchAll=async()=>{
      
-        const response=await fetch("http://localhost:5000/api/game/get",{
+        const response=await fetch("/api/game/get",{
             method:"GET",
             headers:{
                 token:getCookie("authtoken")
@@ -52,7 +52,7 @@ const GetAll = () => {
     const ConfirmDelete=async()=>{
         const updatedQuestions = Questions.filter((question) => question._id !== id);
         setQuestions(updatedQuestions);
-        const response=await fetch(`http://localhost:5000/api/game/delete/${id}`,{
+        const response=await fetch(`/game/delete/${id}`,{
             method:"DELETE",
             headers:{
                 token:token
