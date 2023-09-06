@@ -10,7 +10,7 @@ const GamePlayed = (props) => {
   useEffect(() => {
     const fetchGame = async () => {
       const response = await fetch(
-        `http://localhost:5000/api/session/user/session/${id}`,
+        `/api/session/user/session/${id}`,
         {
           method: "GET",
         }
